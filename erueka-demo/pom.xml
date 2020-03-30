@@ -7,6 +7,7 @@
         <module>server</module>
         <module>client</module>
         <module>ribbon-consumer</module>
+        <module>hystrix-consumer</module>
     </modules>
 
     <parent>
@@ -55,6 +56,12 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.7.RELEASE</version>
         </dependency>
 
     </dependencies>
